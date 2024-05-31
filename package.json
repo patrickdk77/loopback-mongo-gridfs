@@ -1,11 +1,11 @@
 {
   "name": "loopback-mongo-gridfs",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Loopback connector for mongo gridfs storage",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vkatsar/loopback-mongo-gridfs.git"
+    "url": "git+https://github.com/patrickdk77/loopback-mongo-gridfs.git"
   },
   "keywords": [
     "loopback",
@@ -15,8 +15,8 @@
     "storage",
     "GridFSBucket"
   ],
-  "homepage": "https://github.com/vkatsar/loopback-mongo-gridfs#readme",
-  "bugs": "https://github.com/vkatsar/loopback-mongo-gridfs/issues",
+  "homepage": "https://github.com/patrickdk77/loopback-mongo-gridfs#readme",
+  "bugs": "https://github.com/patrickdk77/loopback-mongo-gridfs/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
