@@ -1,5 +1,5 @@
 {
-  "name": "loopback-mongo-gridfs",
+  "name": "@patrickdk77/loopback-mongo-gridfs",
   "version": "2.3.1",
   "description": "Loopback connector for mongo gridfs storage",
   "main": "index.js",
