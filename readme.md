@@ -250,14 +250,13 @@ GET /FileSystem/containers/{container}/files/download
 
 ###### Node.js:
 ```javascript
-Model.downloadContainerFiles(container, where, res, cb);
+Model.downloadContainerFiles(container, where, res);
 ```
 
 ###### Arguments:
 * `container`: (**Required**) Container name
 * `where`: (*Optional*) Where filter (see [Loopback's documentation](https://loopback.io/doc/en/lb3/Where-filter.html) for more info)
 * `res`: (**Required**) The response object
-* `cb`: (**Required - Node only**) Callback function
 
 <hr>
 
@@ -270,7 +269,7 @@ GET /FileSystem/containers/{container}/files/downloadOne
 
 ###### Node.js:
 ```javascript
-Model.downloadContainerFileWhere(container, where, alias, inline, res, cb);
+Model.downloadContainerFileWhere(container, where, alias, inline, res);
 ```
 
 ###### Arguments:
@@ -279,7 +278,6 @@ Model.downloadContainerFileWhere(container, where, alias, inline, res, cb);
 * `alias`: (*Optional*) Use this to download the file with a different filename than the original. Default is `{$filename}` (see [alias](#alias) for more info)
 * `inline`: (*Optional*) Boolean indicating whether to download inline (`true`) or as an attachment (`false`). Default is `false`
 * `res`: (**Required**) The response object
-* `cb`: (**Required - Node only**) Callback function
 
 <hr>
 
@@ -328,7 +326,7 @@ GET /FileSystem/containers/{container}/files/{file}/download
 
 ###### Node.js:
 ```javascript
-Model.downloadContainerFile(container, file, res, inline, cb);
+Model.downloadContainerFile(container, file, res, alias, inline);
 ```
 
 ###### Arguments:
@@ -337,7 +335,6 @@ Model.downloadContainerFile(container, file, res, inline, cb);
 * `res`: (**Required**) The response object
 * `alias`: (*Optional*) Use this to download the file with a different filename than the original. Default is `{$filename}` (see [alias](#alias) for more info)
 * `inline`: (*Optional*) Boolean indicating whether to download inline (`true`) or as an attachment (`false`). Default is `false`
-* `cb`: (**Required - Node only**) Callback function
 
 <hr>
 
@@ -388,7 +385,7 @@ GET /FileSystem/containers/{container}/files/{file}/versions/download
 
 ###### Node.js:
 ```javascript
-Model.downloadFileVersions(container, file, where, res, cb);
+Model.downloadFileVersions(container, file, alias, where, res);
 ```
 
 ###### Arguments:
@@ -397,7 +394,6 @@ Model.downloadFileVersions(container, file, where, res, cb);
 * `alias`: (*Optional*) Use this to download the file with a different filename than the original (always starts with `{$_id}_` to separate each version). Default is `{$filename}` which results to `{$_id}_{$filename}` (see [alias](#alias) for more info).
 * `where`: (*Optional*) Where filter (see [Loopback's documentation](https://loopback.io/doc/en/lb3/Where-filter.html) for more info)
 * `res`: (**Required**) The response object
-* `cb`: (**Required - Node only**) Callback function
 
 <hr>
 
@@ -448,7 +444,7 @@ GET /FileSystem/containers/{container}/files/{file}/versions/{version}/download
 
 ###### Node.js:
 ```javascript
-Model.downloadFileVersion(container, file, version, res, inline, cb);
+Model.downloadFileVersion(container, file, version, res, alias, inline);
 ```
 
 ###### Arguments:
@@ -458,7 +454,6 @@ Model.downloadFileVersion(container, file, version, res, inline, cb);
 * `res`: (**Required**) The response object
 * `alias`: (*Optional*) Use this to download the file with a different filename than the original. Default is `{$_id}_{$filename}` (see [alias](#alias) for more info)
 * `inline`: (*Optional*) Boolean indicating whether to download inline (`true`) or as an attachment (`false`). Default is `false`
-* `cb`: (**Required - Node only**) Callback function
 
 <hr>
 
