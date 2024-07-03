@@ -416,6 +416,19 @@ Model.getFileVersion(container, file, version);
 
 <hr>
 
+###### Node.js:
+```javascript
+Model.updateFileVersion(container, file, version, metadata);
+```
+
+###### Arguments:
+* `container`: (**Required**) Container name
+* `file`: (**Required**) File name
+* `version`: (**Required**) Version ID
+* `metadata`: (**Required**) metadata items to change
+
+<hr>
+
 ### Delete file version
 
 ###### API endpoint:
