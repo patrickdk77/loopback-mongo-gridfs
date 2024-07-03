@@ -1,4 +1,4 @@
-# loopback-mongo-gridfs
+# @patrickdk77/loopback-mongo-gridfs
 
 Uses MongoDB's [GridFS](https://docs.mongodb.org/manual/core/gridfs/) to manage binary contents of your loopback application.
 
@@ -27,12 +27,12 @@ The storage component organizes content in **containers**, **files** and **versi
 
 ## Installation
 
-Add the loopback-mongo-gridfs dependency to your project using yarn or npm.
+Add the @patrickdk77/loopback-mongo-gridfs dependency to your project using yarn or npm.
 
 ```bash
-npm install --save loopback-mongo-gridfs
+npm install --save @patrickdk77/loopback-mongo-gridfs
 or
-yarn add loopback-mongo-gridfs
+yarn add @patrickdk77/loopback-mongo-gridfs
 ```
 
 ### Add Datasource
@@ -43,7 +43,7 @@ Add datasource to your datasources.json (or a js file as documented [here](https
 {
     "gridfs": {
         "name": "gridfs",
-        "connector": "loopback-mongo-gridfs",
+        "connector": "@patrickdk77/loopback-mongo-gridfs",
         "host": "hostname",
         "port": 27017,
         "database": "database",
@@ -63,7 +63,7 @@ Alternatively, you can directly specify the [MongoDB connection string](https://
 {
     "gridfs": {
         "name": "gridfs",
-        "connector": "loopback-mongo-gridfs",
+        "connector": "@patrickdk77/loopback-mongo-gridfs",
         "url": "mongodb://{username}:{password}@{host}:{port}/{database}?{param1}={value1}"
     }
 }
@@ -415,6 +415,13 @@ Model.getFileVersion(container, file, version);
 * `version`: (**Required**) Version ID
 
 <hr>
+
+### Update file version metadata
+
+###### API endpoint:
+```
+PATCH /FileSystem/containers/{container}/files/{file}/versions/{version}
+```
 
 ###### Node.js:
 ```javascript
