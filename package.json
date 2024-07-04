@@ -1,6 +1,6 @@
 {
   "name": "@patrickdk77/loopback-mongo-gridfs",
-  "version": "2.3.0",
+  "version": "2.3.10",
   "description": "Loopback connector for mongo gridfs storage",
   "main": "index.js",
   "repository": {
