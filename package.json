@@ -1,6 +1,6 @@
 {
   "name": "@patrickdk77/loopback-mongo-gridfs",
-  "version": "2.3.18",
+  "version": "2.3.19",
   "description": "Loopback connector for mongo gridfs storage",
   "main": "index.js",
   "repository": {
@@ -30,12 +30,11 @@
     }
   ],
   "dependencies": {
-    "archiver": "^7.0.1",
+    "archiver": "^8.0.0",
     "busboy": "^1.6.0",
-    "mongodb": "^3.5.8"
+    "mongodb": "^3.5.8 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
   },
   "overrides": {
-    "readdir-glob": "^3.0.0",
     "lodash": "^4.18.1",
     "minimatch": "^10.2.5"
   }
