@@ -35,6 +35,8 @@ or
 yarn add @patrickdk77/loopback-mongo-gridfs
 ```
 
+It needs Node 22 or later, because it reads uploaded form data with Node's own parser.
+
 ### Add Datasource
 
 Add datasource to your datasources.json (or a js file as documented [here](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration))
